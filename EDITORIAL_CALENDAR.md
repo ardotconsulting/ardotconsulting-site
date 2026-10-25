@@ -198,14 +198,16 @@
 | 2026-12-11 | Self-Hosting Umami: Privacy-First Web Analytics Without Google Analytics | — |
 | 2026-12-13 | Automating Social Media Management with Open Source Tools | — |
 | 2026-12-15 | When Your Business Outgrows Spreadsheets: Signals and Migrations | — |
+| 2026-12-17 | Automating Year-End Reporting: Close Your Books Faster with Open Source Tools | — |
+| 2026-12-19 | AI Automation for Clinics: Patient Intake, Reminders, and Records Management | — |
 
 ## Upcoming Topics (suggested next)
 
 | Date | Title | Pillar | Tags |
 |------|-------|--------|------|
-| 2026-12-17 | Self-Hosting BookStack: Build a Company Knowledge Base That Actually Gets Used | Open Source Tool Review | bookstack, knowledge-base, documentation, self-hosting, open-source |
-| 2026-12-19 | AI Automation for Clinics: Patient Intake, Reminders, and Records Management | Industry-Specific | healthcare, clinics, patient-intake, reminders, n8n, ollama, open-source |
 | 2026-12-21 | Automating Accounts Payable: From Invoice Receipt to Payment Approval | Practical AI | accounts-payable, invoices, automation, ocr, n8n, ollama, open-source |
+| 2026-12-23 | Self-Hosting SuiteCRM: An Open-Source Sales Pipeline Without Per-Seat Fees | Open Source Tool Review | crm, sales, suitecrm, self-hosting, open-source |
+| 2026-12-25 | AI Automation for Auto Repair Shops: Estimates, Parts Ordering, and Customer Updates | Industry-Specific | auto-repair, estimates, inventory, n8n, ollama, open-source |
 
 ## Notes
 
