@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2026-12-15 by cron
+> **Last updated:** 2026-12-31 by cron
 
 ## Content Pillars
 
@@ -200,14 +200,16 @@
 | 2026-12-15 | When Your Business Outgrows Spreadsheets: Signals and Migrations | — |
 | 2026-12-17 | Automating Year-End Reporting: Close Your Books Faster with Open Source Tools | — |
 | 2026-12-19 | AI Automation for Clinics: Patient Intake, Reminders, and Records Management | — |
+| 2026-12-31 | Automating Accounts Payable: From Invoice Receipt to Payment Approval | — |
 
 ## Upcoming Topics (suggested next)
 
 | Date | Title | Pillar | Tags |
 |------|-------|--------|------|
-| 2026-12-21 | Automating Accounts Payable: From Invoice Receipt to Payment Approval | Practical AI | accounts-payable, invoices, automation, ocr, n8n, ollama, open-source |
 | 2026-12-23 | Self-Hosting SuiteCRM: An Open-Source Sales Pipeline Without Per-Seat Fees | Open Source Tool Review | crm, sales, suitecrm, self-hosting, open-source |
 | 2026-12-25 | AI Automation for Auto Repair Shops: Estimates, Parts Ordering, and Customer Updates | Industry-Specific | auto-repair, estimates, inventory, n8n, ollama, open-source |
+| 2027-01-02 | Self-Hosting Chatwoot: An Open-Source Omnichannel Customer Support Platform | Open Source Tool Review | chatwoot, customer-support, self-hosting, open-source |
+| 2027-01-04 | AI Automation for Dental Practices: Appointments, Claims, and Patient Recall | Industry-Specific | dental, healthcare, scheduling, claims, n8n, ollama, open-source |
 
 ## Notes
 
