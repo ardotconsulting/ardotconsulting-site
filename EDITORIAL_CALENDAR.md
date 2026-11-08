@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2027-01-02 by cron
+> **Last updated:** 2027-01-04 by cron
 
 ## Content Pillars
 
@@ -202,12 +202,12 @@
 | 2026-12-19 | AI Automation for Clinics: Patient Intake, Reminders, and Records Management | — |
 | 2026-12-31 | Automating Accounts Payable: From Invoice Receipt to Payment Approval | — |
 | 2027-01-02 | Self-Hosting Chatwoot: An Open-Source Omnichannel Customer Support Platform | — |
+| 2027-01-04 | AI Automation for Dental Practices: Appointments, Claims, and Patient Recall | — |
 
 ## Upcoming Topics (suggested next)
 
 | Date | Title | Pillar | Tags |
 |------|-------|--------|------|
-| 2027-01-04 | AI Automation for Dental Practices: Appointments, Claims, and Patient Recall | Industry-Specific | dental, healthcare, scheduling, claims, n8n, ollama, open-source |
 | 2027-01-06 | Self-Hosting SuiteCRM: An Open-Source Sales Pipeline Without Per-Seat Fees | Open Source Tool Review | crm, sales, suitecrm, self-hosting, open-source |
 | 2027-01-08 | Automating Contract Review with Open-Source AI: A Practical Guide | Practical AI | contracts, legal, ollama, n8n, document-review |
 | 2027-01-10 | Self-Hosting Bitwarden Organizations: Team Password Sharing Without LastPass | Open Source Tool Review | bitwarden, vaultwarden, passwords, security, self-hosting |
