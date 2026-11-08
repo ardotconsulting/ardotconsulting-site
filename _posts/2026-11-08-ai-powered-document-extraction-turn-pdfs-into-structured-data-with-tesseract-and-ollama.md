@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI-Powered Document Extraction: Turn PDFs Into Structured Data with Tesseract and Ollama"
-date: 2027-01-06
+date: 2026-11-08
 author: "ARDOT Consulting"
 tags: [document-extraction, tesseract, ollama, ocr, automation, open-source]
 excerpt: "Extract text from PDFs and scanned documents with Tesseract OCR, then turn it into clean structured data using a local LLM — all with open source tools running on your own hardware."
