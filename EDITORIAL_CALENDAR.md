@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2027-01-06 by cron
+> **Last updated:** 2026-11-10 by @ardot_automator (published Self-Hosting Caddy: The Reverse Proxy That Makes HTTPS Effortless)
 
 ## Content Pillars
 
@@ -74,34 +74,65 @@
 | 2026-09-24 | Building a Customer Support Chatbot with Open Source AI | — |
 | 2026-09-26 | AI Automation for HR: Recruitment, Screening, and Onboarding | — |
 | 2026-09-26 | Automating Email Triage with Open-Source AI: Sort Your Inbox Without a SaaS | — |
-| 2026-09-27 | AI Automation for Logistics: Route Planning, Fleet Tracking, and Delivery Coordination | cron |
 | 2026-09-28 | Building Data Pipelines: Connect Your Business Systems Without Writing Code | — |
 | 2026-09-30 | Self-Hosting Metabase: Open-Source Business Analytics Without the SaaS Tax | @ardot_automator |
 | 2026-10-02 | Going Paperless with Paperless-ngx: Open-Source Document Management | @ardot_automator |
 | 2026-10-04 | Building an Internal Knowledge Base with BookStack and AI | @ardot_automator |
-| 2026-10-06 | Self-Hosting Nextcloud: Replace Google Workspace with Your Own File Sync, Calendar, and Collaboration Platform | cron |
-| 2026-10-08 | Self-Hosting Mattermost: Replace Slack with Your Own Team Chat Platform | cron |
-| 2026-10-10 | How to Audit Your Business Processes for Automation Opportunities | cron |
-| 2026-10-12 | Automating Marketing Without Marketing SaaS: Open Source Tools That Replace Your Subscription Stack | cron |
-| 2026-10-14 | Open Source Project Management: Replacing Asana and Trello Without Losing Your Team | cron |
-| 2026-10-16 | Self-Hosting Vaultwarden: Replace LastPass with Your Own Password Manager | cron |
-| 2026-10-18 | Self-Hosting Jitsi Meet: Replace Zoom with Your Own Video Conferencing Platform | cron |
+| 2026-10-08 | Self-Hosting Mattermost: Replace Slack with Your Own Team Chat Platform | @ardot_automator |
+| 2026-10-14 | Open Source Project Management: Replacing Asana and Trello Without Losing Your Team | @ardot_automator |
+| 2026-10-16 | Self-Hosting Vaultwarden: Replace LastPass with Your Own Password Manager | @ardot_automator |
+| 2026-10-18 | Self-Hosting Jitsi Meet: Replace Zoom with Your Own Video Conferencing Platform | @ardot_automator |
 | 2026-10-20 | AI Automation for Insurance: Claims Processing and Underwriting Support | cron |
+| 2026-10-22 | Self-Hosting NocoDB: Replace Airtable with Your Own No-Code Database Platform | @ardot_automator |
+| 2026-10-24 | Self-Hosted Monitoring Stack: Uptime Kuma + Grafana Replace StatusPage and Datadog | cron |
+| 2026-10-26 | AI Automation for Manufacturing: Production Scheduling, Quality Control, and Inventory | @ardot_automator |
+| 2026-09-25 | Open Source Help Desk: Replace Zendesk With Self-Hosted Ticketing | @ardot_automator |
+| 2026-10-30 | Self-Hosting Listmonk: Replace Mailchimp With Your Own Newsletter Platform | @ardot_automator |
+| 2026-11-01 | Self-Hosting OpnForm: Replace Typeform with Your Own Form Builder | cron |
+| 2026-11-03 | Self-Hosting Immich: Replace Google Photos With Your Own Photo Platform | @ardot_automator |
+| 2026-10-01 | Self-Hosting Directus: Build Custom Business Apps Without Writing Code | @ardot_automator |
+| 2026-11-07 | Self-Hosting Invoice Ninja: Replace QuickBooks and Freshbooks with Your Own Invoicing Platform | @ardot_automator |
+| 2026-11-11 | Self-Hosting Documenso: Replace DocuSign With Your Own Document Signing Platform | @ardot_automator |
+| 2026-11-15 | Self-Hosting Ghost: Replace Medium and Substack With Your Own Publishing Platform | @ardot_automator |
+| 2026-11-17 | Backing Up Your Self-Hosted Stack: A Practical Disaster Recovery Guide | @ardot_automator |
+| 2026-11-19 | Building an Automated Sales Pipeline with Open Source Tools | @ardot_automator |
+| 2026-11-21 | Automating Customer Onboarding with Open Source Tools | cron |
+| 2026-11-23 | Self-Hosting Mautic: Replace HubSpot with Your Own Marketing Automation Platform | @ardot_automator |
+| 2026-11-27 | Self-Hosting Kimai: Replace Toggl and Harvest with Your Own Time Tracking Platform | @ardot_automator |
+| 2026-12-01 | Self-Hosting Appsmith: Build Internal Business Apps Without Retool Subscriptions | @ardot_automator |
+| 2026-12-03 | AI Automation for Restaurants: Reservations, Inventory, and Staff Scheduling | cron |
+| 2026-12-05 | Self-Hosting ERPNext: Replace NetSuite and SAP with Your Own Open Source ERP | @ardot_automator |
+| 2026-12-07 | Multi-Location Inventory Automation With Open-Source Tools | cron |
+| 2026-12-09 | Automating Procurement and Purchase Orders with Open Source Tools | @ardot_automator |
+| 2026-12-11 | Self-Hosting Umami: Privacy-First Web Analytics Without Google Analytics | @ardot_automator |
+| 2026-12-13 | Automating Social Media Management with Open Source Tools | @ardot_automator |
+| 2026-12-17 | Automating Year-End Reporting: Close Your Books Faster with Open Source Tools | @ardot_automator |
+| 2026-12-21 | Self-Hosting Nextcloud: Replace Google Workspace and Dropbox with Your Own Cloud Platform | @ardot_automator |
+| 2026-12-25 | Self-Hosting Outline: Replace Notion With Your Own Team Knowledge Base | @ardot_automator |
+| 2026-12-29 | 2026 in Review: The Open Source AI Tools That Changed How Small Businesses Work | @ardot_automator |
+| 2026-12-31 | The Self-Hosted Starter Pack: 7 Essential Open Source Tools for a New Business | @ardot_automator (BLOCKED — token expired, committed locally at /tmp/blog-publish) |
+| 2027-01-02 | The Self-Hosted New Year: 7 Open Source Resolutions for Your Business | @ardot_automator (BLOCKED — token expired, committed locally at /tmp/blog-publish2) |
 
-| 2026-10-22 | Self-Hosting NocoDB: Replace Airtable with Your Own No-Code Database Platform | cron |
-| 2026-10-24 | Building a Self-Hosted Monitoring Stack with Uptime Kuma and Grafana | cron |
+## Published (2027 cycle)
 
-## Upcoming Topics (next cycle)
-
-| Date | Title | Pillar | Tags |
-|------|-------|--------|------|
-| 2026-11-01 | Self-Hosting OpnForm: Replace Typeform With Your Own Form Builder | Open Source Tool Review | forms, opnform, formbricks, surveys, self-hosting |
-| 2026-11-03 | Self-Hosting Immich: Replace Google Photos With Your Own Photo Platform | Open Source Tool Review | immich, photos, privacy, docker, self-hosting |
-| 2026-11-05 | AI Automation for Hospitality: Reservations, Guest Feedback, and Staff Scheduling | Industry-Specific | hospitality, automation, n8n, ollama, odoo, calcom, open-source |
-| 2026-11-07 | AI Automation for Field Services: Dispatch, Job Tracking, and Customer Communications | Industry-Specific | field-services, automation, n8n, ollama, odoo, dispatch, open-source, trades |
-| 2026-11-17 | Backing Up Your Self-Hosted Stack: A Practical Disaster Recovery Guide | Practical AI | backups, disaster-recovery, self-hosting, docker, restic, borgbackup, strategy |
-| 2026-11-19 | Building an Automated Sales Pipeline with Open Source Tools | Practical AI | sales-pipeline, automation, n8n, odoo, ollama, crm, open-source |
-| 2026-11-21 | Automating Customer Onboarding with Open Source Tools | Practical AI | customer-onboarding, automation, n8n, odoo, ollama, bookstack, nextcloud, open-source |
+| Date | Title | Issue |
+|------|-------|-------|
+| 2027-01-04 | Open Source CRM Showdown: Odoo vs ERPNext vs SuiteCRM for Small Business | — | published |
+| 2026-11-08 | AI-Powered Document Extraction: Turn PDFs Into Structured Data with Tesseract and Ollama | — | published |
+| 2026-11-10 | Self-Hosting Caddy: The Reverse Proxy That Makes HTTPS Effortless | @ardot_automator |
+| 2027-01-08 | Self-Hosting Caddy: The Reverse Proxy That Makes HTTPS Effortless | — | published 2026-11-10 |
+| 2027-01-10 | Automating Inventory Replenishment: Never Run Out of Stock Again | — |
+| 2027-01-12 | Self-Hosting Penpot: Replace Figma With Your Own Design Platform | — |
+| 2027-01-14 | Building a Knowledge Graph for Your Business with Open Source Tools | — |
+| 2027-01-16 | AI Automation for Dental Practices: Appointments, Reminders, and Patient Records | — |
+| 2027-01-18 | Self-Hosting Flame Dashboard: Centralize Access to All Your Self-Hosted Tools | — |
+| 2027-01-20 | From Zero to Automated: A Beginner's Guide to n8n Workflow Design Patterns | — |
+| 2027-01-22 | Open Source Form Builders Compared: OpnForm vs NocoDB Forms vs Directus Forms | — |
+| 2027-01-24 | Automating Quality Assurance: Open Source Testing for Your Business Processes | — |
+| 2027-01-26 | Self-Hosting Gitea: Your Own Git Hosting for Private Code and Documents | — |
+| 2027-01-28 | AI Automation for Veterinary Clinics: Patient Records, Reminders, and Inventory | — |
+| 2027-01-30 | The Self-Hosted Security Checklist: 12 Steps to Lock Down Your Stack | — |
+| 2027-02-01 | Building a Customer Feedback Loop with Open Source Tools | — |
 
 ## Topic Descriptions
 
@@ -184,33 +215,6 @@
 **Pillar:** Practical AI
 **Tags:** security, best-practices, automation, privacy
 **Description:** Security best practices for AI automation: API key management, network segmentation for self-hosted tools, encrypting data at rest, access control in n8n, secure Ollama deployment. Include a security checklist.
-
-## Published (recent cycle)
-
-| Date | Title | Issue |
-|------|-------|-------|
-| 2026-11-29 | The True Cost of Self-Hosting vs SaaS: A Real-World Comparison | — |
-| 2026-12-01 | Self-Hosting Appsmith: Build Internal Business Apps Without Retool | — |
-| 2026-12-03 | AI Automation for Restaurants: Reservations, Inventory, and Staff Scheduling | — |
-| 2026-12-05 | Self-Hosting ERPNext: Replace NetSuite and SAP with Your Own Open Source ERP | — |
-| 2026-12-07 | Multi-Location Inventory Automation With Open-Source Tools | — |
-| 2026-12-09 | Automating Procurement and Purchase Orders With Open-Source Tools | — |
-| 2026-12-11 | Self-Hosting Umami: Privacy-First Web Analytics Without Google Analytics | — |
-| 2026-12-13 | Automating Social Media Management with Open Source Tools | — |
-| 2026-12-15 | When Your Business Outgrows Spreadsheets: Signals and Migrations | — |
-| 2026-12-17 | Automating Year-End Reporting: Close Your Books Faster with Open Source Tools | — |
-| 2026-12-19 | AI Automation for Clinics: Patient Intake, Reminders, and Records Management | — |
-| 2026-12-31 | Automating Accounts Payable: From Invoice Receipt to Payment Approval | — |
-| 2027-01-02 | Self-Hosting Chatwoot: An Open-Source Omnichannel Customer Support Platform | — |
-| 2027-01-04 | AI Automation for Dental Practices: Appointments, Claims, and Patient Recall | — |
-| 2027-01-06 | Self-Hosting SuiteCRM: An Open-Source Sales Pipeline Without Per-Seat Fees | — |
-
-## Upcoming Topics (suggested next)
-
-| Date | Title | Pillar | Tags |
-|------|-------|--------|------|
-| 2027-01-08 | Automating Contract Review with Open-Source AI: A Practical Guide | Practical AI | contracts, legal, ollama, n8n, document-review |
-| 2027-01-10 | Self-Hosting Bitwarden Organizations: Team Password Sharing Without LastPass | Open Source Tool Review | bitwarden, vaultwarden, passwords, security, self-hosting |
 
 ## Notes
 
