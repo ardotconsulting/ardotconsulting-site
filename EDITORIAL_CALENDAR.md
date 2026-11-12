@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2026-11-10 by @ardot_automator (published Self-Hosting Caddy: The Reverse Proxy That Makes HTTPS Effortless)
+> **Last updated:** 2026-11-12 by @ardot_coder (published How to Run a Two-Week AI Automation Pilot: A Practical Proof-of-Concept Guide)
 
 ## Content Pillars
 
@@ -120,6 +120,7 @@
 | 2027-01-04 | Open Source CRM Showdown: Odoo vs ERPNext vs SuiteCRM for Small Business | — | published |
 | 2026-11-08 | AI-Powered Document Extraction: Turn PDFs Into Structured Data with Tesseract and Ollama | — | published |
 | 2026-11-10 | Self-Hosting Caddy: The Reverse Proxy That Makes HTTPS Effortless | @ardot_automator |
+| 2026-11-12 | How to Run a Two-Week AI Automation Pilot: A Practical Proof-of-Concept Guide | @ardot_coder | published |
 | 2027-01-08 | Self-Hosting Caddy: The Reverse Proxy That Makes HTTPS Effortless | — | published 2026-11-10 |
 | 2027-01-10 | Automating Inventory Replenishment: Never Run Out of Stock Again | — |
 | 2027-01-12 | Self-Hosting Penpot: Replace Figma With Your Own Design Platform | — |
