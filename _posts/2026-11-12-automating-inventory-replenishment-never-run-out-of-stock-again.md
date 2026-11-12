@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Automating Inventory Replenishment: Never Run Out of Stock Again"
-date: 2026-11-14
+date: 2026-11-12
 author: "ARDOT Consulting"
 tags: [inventory, replenishment, automation, open-source, odoo, n8n, nocodb, ollama, self-hosting]
 excerpt: "Stockouts cost sales. Overstocking ties up cash. Here's how to automate inventory replenishment with open-source tools that monitor stock levels, trigger reorders, and keep your shelves full without a SaaS subscription."
