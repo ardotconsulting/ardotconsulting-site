@@ -1,0 +1,33 @@
+name: Check links
+
+# On PRs that add or change posts: every https:// link in those posts must
+# resolve (catches 404s like an undated post URL or a wrong demo link).
+on:
+  pull_request:
+    paths: ["_posts/**"]
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Find changed posts
+        id: posts
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          files=$(git diff --name-only --diff-filter=AM "origin/$BASE_REF"...HEAD -- '_posts/*.md' | tr '\n' ' ')
+          echo "files=$files" >> "$GITHUB_OUTPUT"
+      - if: steps.posts.outputs.files != ''
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          # Root-relative links (/#contact) are checked against the live site.
+          args: --no-progress --scheme https --max-retries 2 --base-url https://www.ardotconsulting.com ${{ steps.posts.outputs.files }}
+          lycheeVersion: v0.24.2
+          fail: true
