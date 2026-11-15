@@ -21,7 +21,7 @@ There's a self-hosted alternative that does the same job for the cost of a singl
 
 Uptime Kuma and Grafana do different things, and they're better together than either is alone.
 
-**Uptime Kuma** is an uptime monitor. It pings your services at regular intervals — every 30 seconds, every minute, whatever you set — and if a service stops responding, it sends you an alert. It supports HTTP, HTTPS, TCP, DNS, ping, database queries, and even Docker container health checks. It also includes a built-in status page that you can make public or keep private. Think of it as a self-hosted replacement for Pingdom, UptimeRobot, or Better Stack.
+**Uptime Kuma** is an uptime monitor. It pings your services at regular intervals — every 30 seconds, every minute, whatever you set — and if a service stops responding, it sends you an alert. It supports HTTP, HTTPS, TCP, DNS, ping, database queries, and even Docker container health checks. It also includes a built-in status page that you can make public or keep private. Think of it as a self-hosted replacement for Pingdom, UptimeRobot, or Better Stack. ([Source code](https://github.com/ardotconsulting/poc-uptime-kuma) · [Live demo status page](https://uptime-kuma.poc.ardotconsulting.com/status/kuma))
 
 **Grafana** is a visualization and dashboarding tool. It pulls metrics from data sources — Prometheus is the most common — and renders them as graphs, gauges, heat maps, and alerts. It doesn't check whether your services are up (that's Uptime Kuma's job), but it shows you *how* your services are performing: CPU usage, memory, disk space, request latency, error rates over time. Think of it as a self-hosted replacement for the dashboards you'd get from Datadog or New Relic.
 
@@ -401,6 +401,8 @@ Keep monitoring data for 14 days — it's useful for post-incident analysis, but
 ## Getting Started
 
 You can set up Uptime Kuma alone in 15 minutes and immediately know when your services go down. That alone is worth doing today, even if you're not ready for the full Grafana stack. Start with Uptime Kuma, add the monitors from the table above for every service you run, and configure Telegram or email alerts. Then, when you have an afternoon, add Grafana and Prometheus for the deeper visibility.
+
+Want to see what a live Uptime Kuma status page looks like? Check out our [live demo](https://uptime-kuma.poc.ardotconsulting.com/status/kuma) — it's a real instance monitoring real endpoints. The [source code and deployment instructions are on GitHub](https://github.com/ardotconsulting/poc-uptime-kuma).
 
 The tools are free. The server costs less than a single SaaS subscription. And the first time Uptime Kuma alerts you about a problem before a customer notices, the stack pays for itself.
 
