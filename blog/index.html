@@ -15,10 +15,26 @@ description: "Practical insights on AI automation — no hype, just what works. 
   </div>
 </section>
 
-<div class="post-list">
+<!-- ===== Tag Filter ===== -->
+<div class="container" style="padding:0 0 24px;">
+  <div class="tag-filter" id="tag-filter" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;">
+    {% assign all_tags = site.posts | map: 'tags' | join: ',' | split: ',' | uniq %}
+    {% for tag in all_tags %}
+      <button class="tag-btn" data-tag="{{ tag | strip }}" onclick="filterPosts('{{ tag | strip }}')">{{ tag | strip }}</button>
+    {% endfor %}
+    <button class="tag-btn tag-btn-active" data-tag="all" onclick="filterPosts('all')">All</button>
+  </div>
+</div>
+
+<!-- ===== Search ===== -->
+<div class="container" style="padding:0 0 24px;">
+  <input type="text" id="blog-search" placeholder="Search posts..." style="width:100%;max-width:480px;padding:10px 16px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text-primary);font-size:14px;margin-bottom:16px;" onkeyup="searchPosts()">
+</div>
+
+<div class="post-list" id="post-list">
   {% if site.posts.size > 0 %}
     {% for post in site.posts %}
-    <article class="post-card">
+    <article class="post-card" data-tags="{{ post.tags | join: ',' | downcase }}" data-title="{{ post.title | downcase }}" data-desc="{{ post.description | downcase }}">
       <div class="post-card-meta">
         <span>{{ post.date | date: "%B %-d, %Y" }}</span>
         {% if post.tags %}<span class="tag">{{ post.tags | first }}</span>{% endif %}
@@ -42,3 +58,64 @@ description: "Practical insights on AI automation — no hype, just what works. 
     </div>
   {% endif %}
 </div>
+
+<!-- ===== Tag Filter & Search Styles ===== -->
+<style>
+.tag-btn {
+  padding: 6px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.tag-btn:hover { border-color: var(--accent); color: var(--accent); }
+.tag-btn-active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+.tag-btn-active:hover { color: var(--bg); }
+.post-card.hidden { display: none; }
+#blog-search:focus { outline: none; border-color: var(--accent); }
+</style>
+
+<!-- ===== Filter & Search JavaScript ===== -->
+<script>
+function filterPosts(tag) {
+  var cards = document.querySelectorAll('.post-card');
+  var btns = document.querySelectorAll('.tag-btn');
+  var search = document.getElementById('blog-search');
+  if (search) search.value = '';
+
+  btns.forEach(function(b) { b.classList.remove('tag-btn-active'); });
+  var activeBtn = document.querySelector('[data-tag="' + tag + '"]');
+  if (activeBtn) activeBtn.classList.add('tag-btn-active');
+
+  cards.forEach(function(card) {
+    var tags = (card.getAttribute('data-tags') || '').toLowerCase();
+    if (tag === 'all' || tags.includes(tag)) {
+      card.classList.remove('hidden');
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+}
+
+function searchPosts() {
+  var query = document.getElementById('blog-search').value.toLowerCase();
+  var cards = document.querySelectorAll('.post-card');
+  var btns = document.querySelectorAll('.tag-btn');
+  btns.forEach(function(b) { b.classList.remove('tag-btn-active'); });
+  var allBtn = document.querySelector('[data-tag="all"]');
+  if (allBtn) allBtn.classList.add('tag-btn-active');
+
+  cards.forEach(function(card) {
+    var title = (card.getAttribute('data-title') || '').toLowerCase();
+    var desc = (card.getAttribute('data-desc') || '').toLowerCase();
+    if (title.includes(query) || desc.includes(query)) {
+      card.classList.remove('hidden');
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+}
+</script>
