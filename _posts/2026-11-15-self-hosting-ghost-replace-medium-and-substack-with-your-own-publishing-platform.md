@@ -306,7 +306,7 @@ Always check the [Ghost release notes](https://github.com/TryGhost/Ghost/release
 
 ## Theme Customization
 
-Ghost themes use Handlebars templating. The default Caspar theme is clean and professional, but you'll likely want to customize it.
+Ghost themes use Handlebars templating. The default Casper theme is clean and professional, but you'll likely want to customize it.
 
 **Free themes:** Browse the [Ghost Marketplace](https://ghost.org/themes/) for community themes. Most are MIT-licensed and can be modified freely.
 
@@ -393,7 +393,7 @@ If you're just starting out and have 20 readers, Medium or Ghost(Pro) hosted is 
 
 We're running a live demo of Ghost on our lab infrastructure:
 
-- **Try the demo:** [ghost.poc.ardotconsulting.com](https://ghost.poc.ardotconsulting.com) — a working Ghost instance with the default Caspar theme
+- **Try the demo:** [ghost.poc.ardotconsulting.com](https://ghost.poc.ardotconsulting.com) — a working Ghost instance with the default Casper theme
 - **Source code:** [github.com/ardotconsulting/poc-ghost](https://github.com/ardotconsulting/poc-ghost) — Dockerfile and config
 
 The demo runs on a single container with SQLite (fine for a demo; use MySQL for production as described above).
