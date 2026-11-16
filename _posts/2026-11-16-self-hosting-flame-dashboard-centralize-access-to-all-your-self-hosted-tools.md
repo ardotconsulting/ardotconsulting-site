@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Self-Hosting Flame Dashboard: Centralize Access to All Your Self-Hosted Tools"
-date: 2027-01-16
+date: 2026-11-16
 author: "ARDOT Consulting"
 tags: [flame, dashboard, startpage, self-hosting, docker, open-source]
 excerpt: "Flame is a lightweight open-source startpage that turns your growing collection of self-hosted tools into one clean, searchable dashboard — here's how to deploy it with Docker."
