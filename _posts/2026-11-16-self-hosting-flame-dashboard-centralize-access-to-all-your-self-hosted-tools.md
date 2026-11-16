@@ -15,7 +15,7 @@ This is the problem Flame solves. It's a self-hosted startpage — a single dash
 
 [Flame](https://github.com/pawelmalak/flame) is an open-source startpage for your server, created by Pawel Malak and licensed under the MIT license. It's built with React and Node.js, uses SQLite for data storage (no external database required), and runs in a single Docker container. With over 6,700 stars on GitHub, it's one of the most popular self-hosted dashboard options available.
 
-Think of it as a personal landing page for your infrastructure. When you open your browser, instead of a blank tab or a search engine, you see a grid of icons — each one linking directly to one of your self-hosted services. Click the n8n icon, you're in n8n. Click the Plausible icon, you're looking at your analytics. It's that simple.
+Think of it as a personal landing page for your infrastructure. When you open your browser, instead of a blank tab or a search engine, you see a grid of icons — each one linking directly to one of your self-hosted services. Click the n8n icon, you're in n8n. Click the Plausible icon, you're looking at your analytics. It's that simple. ([Source code](https://github.com/ardotconsulting/poc-flame-dashboard) · [Live demo](https://flame-dashboard.poc.ardotconsulting.com))
 
 ### Key Features
 
@@ -299,5 +299,7 @@ This is the same philosophy behind every tool we've covered in this series — f
 ## Getting Started
 
 If you've been following along with our self-hosting guides, adding Flame takes about 10 minutes and immediately makes your entire stack more usable. If you're new to self-hosting and wondering where to start, that's exactly what we help with.
+
+Want to see what a live Flame dashboard looks like? Check out our [live demo](https://flame-dashboard.poc.ardotconsulting.com) — it's a real instance you can browse. The [source code and deployment instructions are on GitHub](https://github.com/ardotconsulting/poc-flame-dashboard).
 
 **Ready to centralize your self-hosted infrastructure?** [Get in touch with ARDOT Consulting](/) — we help small businesses design, deploy, and manage open-source tool stacks that replace expensive SaaS subscriptions with tools you own and control.
