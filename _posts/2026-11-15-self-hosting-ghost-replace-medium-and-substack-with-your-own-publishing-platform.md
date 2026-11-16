@@ -387,6 +387,19 @@ If you're just starting out and have 20 readers, Medium or Ghost(Pro) hosted is 
 
 ---
 
+---
+
+## Try It Live
+
+We're running a live demo of Ghost on our lab infrastructure:
+
+- **Try the demo:** [ghost.poc.ardotconsulting.com](https://ghost.poc.ardotconsulting.com) — a working Ghost instance with the default Caspar theme
+- **Source code:** [github.com/ardotconsulting/poc-ghost](https://github.com/ardotconsulting/poc-ghost) — Dockerfile and config
+
+The demo runs on a single container with SQLite (fine for a demo; use MySQL for production as described above).
+
+---
+
 ## Wrapping Up
 
 Ghost gives you a professional publishing platform — blog, newsletter, and memberships — with no platform fees and full data ownership. It's one of the best open source tools for any business that takes content seriously.
