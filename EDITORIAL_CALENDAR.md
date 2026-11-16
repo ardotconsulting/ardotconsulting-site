@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2026-11-12 by @ardot_automator (published Automating Inventory Replenishment: Never Run Out of Stock Again)
+> **Last updated:** 2027-01-14 by @ardot_coder_bot (published Building a Knowledge Graph for Your Business with Open Source Tools)
 
 ## Content Pillars
 
@@ -123,7 +123,7 @@
 | 2027-01-08 | Self-Hosting Caddy: The Reverse Proxy That Makes HTTPS Effortless | — | published 2026-11-10 |
 | 2027-01-10 | Automating Inventory Replenishment: Never Run Out of Stock Again | — | published 2026-11-12 |
 | 2027-01-12 | Self-Hosting Penpot: Replace Figma With Your Own Design Platform | — |
-| 2027-01-14 | Building a Knowledge Graph for Your Business with Open Source Tools | — |
+| 2027-01-14 | Building a Knowledge Graph for Your Business with Open Source Tools | — | published 2027-01-14 |
 | 2027-01-16 | AI Automation for Dental Practices: Appointments, Reminders, and Patient Records | — |
 | 2027-01-18 | Self-Hosting Flame Dashboard: Centralize Access to All Your Self-Hosted Tools | — |
 | 2027-01-20 | From Zero to Automated: A Beginner's Guide to n8n Workflow Design Patterns | — |
