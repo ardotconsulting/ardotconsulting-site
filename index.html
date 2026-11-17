@@ -305,6 +305,12 @@ og_type: "website"
             <label for="message">What would you like to automate?</label>
             <textarea id="message" name="message" required placeholder="Tell us about the repetitive tasks eating your team's time..."></textarea>
           </div>
+          <div class="form-group form-consent">
+            <label>
+              <input type="checkbox" name="privacy_policy" value="agreed" required>
+              I agree to the <a href="{{ '/privacy/' | relative_url }}">privacy policy</a>.
+            </label>
+          </div>
           <button type="submit" class="btn btn-primary form-submit">
             Send Message
             <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -312,7 +318,7 @@ og_type: "website"
               <polygon points="22 2 15 22 11 13 2 9 22 2"/>
             </svg>
           </button>
-          <p class="form-note">We'll never share your information. No spam, ever.</p>
+          <p class="form-note">We only use this to reply to you. No spam, ever.</p>
         </form>
       </div>
     </div>
