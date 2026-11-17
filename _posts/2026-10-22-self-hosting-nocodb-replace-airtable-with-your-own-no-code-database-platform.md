@@ -331,6 +331,17 @@ NocoDB isn't a perfect drop-in replacement for everything Airtable does. Here's 
 - **Community support, not enterprise support** — If something breaks, you're relying on GitHub issues and community forums, not a dedicated support team. For critical business processes, budget time for troubleshooting.
 - **AGPL-3.0 license** — NocoDB is open source under AGPL, which means if you modify and distribute the software, you must release your modifications under the same license. For internal use, this doesn't matter. But if you're building a product on top of NocoDB, consult your legal team.
 
+## Try It Live
+
+We're running a live demo of NocoDB on our lab infrastructure:
+
+- **Try the demo:** [nocodb.poc.ardotconsulting.com](https://nocodb.poc.ardotconsulting.com) — a working NocoDB instance with the spreadsheet interface, multiple views, and API access
+- **Source code:** [github.com/ardotconsulting/poc-nocodb](https://github.com/ardotconsulting/poc-nocodb) — Dockerfile and config
+
+The demo runs on a single container with embedded SQLite (fine for a demo; use PostgreSQL for production as described above).
+
+---
+
 ## Conclusion
 
 Airtable is a great product. But its pricing model — per seat, with escalating tiers for features that should be standard — makes it expensive for growing teams. And the fact that your data sits on someone else's servers, accessible only through their API and export tools, is a risk.
