@@ -8,7 +8,7 @@ workflows:
         - 'actions/configure-pages@v6.0.0'
         - 'actions/deploy-pages@v5.0.1'
         - 'actions/upload-pages-artifact@v5.0.0'
-        - 'ruby/setup-ruby@v1.336.0'
+        - 'ruby/setup-ruby@v1.338.0'
     '.github/workflows/links.yml':
         - 'actions/checkout@v7.0.1'
         - 'lycheeverse/lychee-action@v2.9.0'
@@ -53,9 +53,9 @@ dependencies:
         commit: 'sha1-e7477775783ea5526144ba13e8db5eec57747ce8'
         owner_id: 74027027
         repo_id: 320929718
-    'ruby/setup-ruby@v1.336.0':
-        ref: 'v1.336.0'
-        commit: 'sha1-de492cf36cbab201753d720ce4f4e336cd688c94'
+    'ruby/setup-ruby@v1.338.0':
+        ref: 'v1.338.0'
+        commit: 'sha1-b3aaceaef7e0ee231b499e7b5f49c03fc1d32199'
         owner_id: 210414
         repo_id: 231208785
     'zizmorcore/zizmor-action@v0.8.1':
