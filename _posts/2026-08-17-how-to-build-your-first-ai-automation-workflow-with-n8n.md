@@ -279,6 +279,16 @@ If that trade-off makes sense for your business, the best next step is to try it
 
 ---
 
+## Try It Yourself
+
+We run exactly the setup from this guide on our own lab server:
+
+**[Our n8n instance →](https://n8n.poc.ardotconsulting.com)** — a live self-hosted n8n. Sign-in is private, because n8n workflows can run code on the server, so this one isn't open for public editing.
+
+**[View the source →](https://github.com/ardotconsulting/poc-n8n)** — the Dockerfile and steps to run the same thing yourself in a few minutes.
+
+---
+
 ## Want Help Setting This Up?
 
 If you'd rather have someone walk you through it — or just build the whole thing for you — that's what we do. ARDOT Consulting designs and deploys open source AI automation for small businesses. No vendor lock-in, no per-task fees, no data leaving your control.
