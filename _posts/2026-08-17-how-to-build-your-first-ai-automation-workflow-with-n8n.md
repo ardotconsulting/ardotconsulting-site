@@ -279,6 +279,16 @@ If that trade-off makes sense for your business, the best next step is to try it
 
 ---
 
+## Try It Yourself
+
+Want to see n8n in action before installing anything? We've deployed a live demo:
+
+**[Try n8n →](https://n8n.poc.ardotconsulting.com)** — experiment with the workflow editor and build your first automation in your browser.
+
+**[View the source →](https://github.com/ardotconsulting/poc-n8n)** — see how the demo is deployed.
+
+---
+
 ## Want Help Setting This Up?
 
 If you'd rather have someone walk you through it — or just build the whole thing for you — that's what we do. ARDOT Consulting designs and deploys open source AI automation for small businesses. No vendor lock-in, no per-task fees, no data leaving your control.
