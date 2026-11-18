@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "From Zero to Automated: A Beginner's Guide to n8n Workflow Design Patterns"
-date: 2027-01-20
+date: 2026-11-18
 author: "ARDOT Consulting"
 tags: [n8n, automation, workflow-design, patterns, open-source, tutorial, self-hosting]
 excerpt: "Every n8n workflow — no matter how complex — is built from a handful of reusable design patterns. Learn the six patterns that cover 90% of business automation needs, with practical examples and no jargon."
