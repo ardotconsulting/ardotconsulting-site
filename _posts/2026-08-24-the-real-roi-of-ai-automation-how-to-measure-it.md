@@ -117,6 +117,8 @@ You can also measure this more directly with a simple quarterly survey: "How muc
 
 Now let's combine all four levers into a single ROI calculation.
 
+> **Try it yourself:** Plug your own numbers into our [interactive ROI Calculator](https://roi-calculator.poc.ardotconsulting.com) — it implements all four levers from this post with preset scenarios. ([Source code](https://github.com/ardotconsulting/poc-roi-calculator))
+
 ### The Total Benefit
 
 | Lever | Monthly Value |
