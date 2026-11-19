@@ -303,3 +303,4 @@ If you'd like help setting up Metabase or building a custom analytics dashboard 
 ---
 
 *Want to see Metabase in action with your own data? ARDOT Consulting can help you deploy, configure, and connect your business systems. [Contact us](/#contact) to schedule a free consultation.*
+> **Try it yourself:** We've deployed a live Metabase instance you can explore — [https://metabase.poc.ardotconsulting.com](https://metabase.poc.ardotconsulting.com). The admin password is available in Coolify. [View the source code →](https://github.com/ardotconsulting/poc-metabase)
