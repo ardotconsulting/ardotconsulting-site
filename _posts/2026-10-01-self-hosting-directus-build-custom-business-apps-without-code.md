@@ -295,6 +295,18 @@ Directus fills a gap that most businesses encounter eventually: the space betwee
 
 Pair it with n8n for complex integrations and Ollama for AI features, and you have a complete open-source data platform that replaces several SaaS subscriptions at once — for the cost of a single small VPS.
 
+
+---
+
+## Try It Yourself
+
+A live demo of Directus is running on our infrastructure:
+
+- **[Try Directus →](https://directus.poc.ardotconsulting.com/admin/)** — explore the Data Studio admin interface
+- **[Source code →](https://github.com/ardotconsulting/poc-directus)** — see how it's deployed (single Docker container, SQLite)
+
+The demo resets periodically. Admin credentials are managed automatically — just explore the interface.
+
 ---
 
 *Want help setting up Directus or building custom business automation workflows? [Get in touch with ARDOT Consulting](/) — we design and implement open-source automation systems tailored to your business.*
