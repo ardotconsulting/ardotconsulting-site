@@ -332,4 +332,16 @@ Google Workspace is convenient, but convenience isn't the same as control. Every
 
 The setup takes an afternoon. The migration takes a few weeks of gradual transition. The payoff is permanent: your company's knowledge stays on your server, under your rules, with no per-user tax and no vendor deciding to change the deal next quarter.
 
+
+---
+
+## Try It Live
+
+We're running a live demo of Nextcloud on our lab infrastructure:
+
+- **Try the demo:** [nextcloud.poc.ardotconsulting.com](https://nextcloud.poc.ardotconsulting.com) — a working Nextcloud instance with file sync, calendar, and contacts
+- **Source code:** [github.com/ardotconsulting/poc-nextcloud](https://github.com/ardotconsulting/poc-nextcloud) — Dockerfile and config
+
+The demo runs on a single container with SQLite (no external database needed). Admin access is protected — browse the interface and explore Nextcloud's features as a visitor.
+
 If you want help setting up Nextcloud for your business — from server configuration to data migration to team training — [get in touch](/#contact). We specialize in helping small businesses move to self-hosted open source tools without the headaches.
