@@ -3,153 +3,286 @@ layout: post
 title: "Open Source Form Builders Compared: OpnForm vs NocoDB Forms vs Directus Forms"
 date: 2026-11-20
 author: "ARDOT Consulting"
-tags: [opnform, nocodb, directus, forms, open-source, self-hosting, comparison, no-code, typeform-alternative]
-excerpt: "Every business needs forms — contact forms, intake questionnaires, lead captures, feedback surveys. Three open source tools handle them differently. Here's an honest comparison of OpnForm, NocoDB Forms, and Directus, and which one fits your situation."
+tags: [opnform, nocodb, directus, forms, comparison, open-source, self-hosting, no-code]
+excerpt: "Three self-hostable form builders, three different philosophies. Here's an honest comparison of OpnForm, NocoDB Forms, and Directus Forms for businesses that want to collect data without per-response pricing."
 ---
 
-# Open Source Form Builders Compared: OpnForm vs NocoDB Forms vs Directus Forms
+Every business collects data through forms. Customer feedback, job applications, event registrations, support tickets, lead capture, internal requests. The tools you use to build those forms determine how much you pay, where your data lives, and how easily you can connect submissions to the rest of your workflow.
 
-Every business collects information through forms. A contact form on your website. A client intake questionnaire. A lead capture page for a campaign. A vendor registration form. An internal equipment request. An event RSVP. A customer feedback survey.
+Typeform charges $25/month for 100 responses. SurveyMonkey caps responses on lower tiers. Jotform locks file upload size behind higher plans. Every SaaS form builder eventually hits the same wall: you outgrow the limits, and the next tier doubles your cost.
 
-The default move for most small businesses is to reach for a hosted form tool — Typeform, Jotform, Formstack — and pay $25 to $99 per month for the privilege of storing your respondents' data on someone else's servers, with per-response limits and feature gates that push you into higher tiers the moment your forms get useful.
+If you're already self-hosting parts of your stack, you have three solid options for forms that don't charge per response. But they approach the problem from very different angles. Here's how OpnForm, NocoDB Forms, and Directus Forms compare.
 
-We've covered the self-hosted alternative before: OpnForm is an excellent direct Typeform replacement. But it's not the only option, and depending on what else you're running, one of two other open source tools — NocoDB or Directus — might be the better fit. All three can collect form submissions on your own infrastructure. They just approach the problem from different angles.
+## The Three Contenders
 
-This post compares them honestly so you can pick the one that matches your situation — not the one that's "best" in the abstract.
+**OpnForm** is a dedicated form builder. It does one thing: create forms and collect submissions. Think of it as the Typeform replacement. It's built on Laravel and Vue, licensed under AGPLv3 (a genuine open source license), and has over 4,000 stars on GitHub.
 
----
+**NocoDB** is a no-code database that happens to include form views. It's an Airtable alternative first, form builder second. You create a table, define columns, then generate a public form that writes directly into that table. It's licensed under the Sustainable Use License, which is source-available but not OSI-approved open source.
 
-## The Three Approaches, In Plain Terms
+**Directus** is a headless CMS and backend platform that can build forms through its data collections and flow automations. It wraps any SQL database with an admin panel, REST/GraphQL APIs, and automation rules. Like NocoDB, it uses a source-available license (the Monospace Sustainable Core License). It's the most powerful of the three, but also the most complex.
 
-Before we get into features, it helps to understand what each tool actually is, because that determines everything else.
+## License Comparison: Open Source vs Source-Available
 
-**OpnForm is a form builder.** That's its entire job. You open a visual editor, drag fields onto a canvas, configure conditional logic and notifications, publish, and embed the form on your website or share a link. Submissions land in OpnForm's dashboard and can be sent to Slack, Discord, email, or a webhook. It is the closest drop-in replacement for Typeform. It does not try to be a database, a CRM, or an app builder — it collects form responses and gets out of the way.
+Before comparing features, it's worth understanding the license distinction because it matters for compliance-conscious businesses.
 
-**NocoDB is a no-code database with a form view.** It's an open source Airtable alternative: it connects to a real SQL database (Postgres, MySQL, SQLite) and presents it as a friendly spreadsheet-like interface with views — grid, Kanban, gallery, calendar, and **form**. The form view turns any table into a submission form. When someone fills it out, a new row is created in that table. This means your form submissions live alongside all your other business data — not in a separate forms tool. NocoDB's form is a feature of the database, not a standalone product.
+| Tool | License | OSI-Approved | Can Self-Host Free | Can Modify Source |
+|------|---------|-------------|-------------------|-------------------|
+| OpnForm | AGPLv3 | Yes | Yes | Yes |
+| NocoDB | Sustainable Use License | No | Yes (internal use) | Yes (internal use) |
+| Directus | MSCL 1.0 | No | Yes (internal use) | Yes (internal use) |
 
-**Directus is a data platform with form-like data entry and API submission.** Directus wraps any SQL database with instant REST/GraphQL APIs, a visual admin app (the Data Studio), and an automation engine (Flows). It doesn't ship a Typeform-style public form builder. Instead, you get two form-like capabilities: the admin app itself is a form-driven interface for creating and editing records (useful for internal forms like equipment requests or PTO), and Directus's public API endpoints let you build a custom external form — on your website, in n8n, or anywhere — that writes directly to your database. Flows then handle notifications, validation, and downstream automation the moment a submission arrives.
+OpnForm's AGPLv3 license is the most permissive for self-hosting in the traditional open source sense. You can modify it, distribute it, and even offer it as a service to others, as long as you share your modifications under the same license.
 
-So the real question isn't "which form builder is best?" It's: **where do you want your form data to live, and what else is happening around it?**
-
----
+NocoDB and Directus use source-available licenses that allow free self-hosting for internal business use. The main restriction is that you can't turn around and offer the software itself as a hosted product that competes with their cloud offerings. For most small businesses self-hosting internally, this distinction doesn't matter in practice. But if you're in a regulated industry with strict procurement requirements around OSI-approved licenses, it's a factor.
 
 ## Feature Comparison
 
-| Feature | OpnForm | NocoDB Forms | Directus |
-|---------|---------|--------------|----------|
-| Primary purpose | Form builder | No-code database (form is a view) | Data platform + APIs (form entry via admin/API) |
-| Visual form designer | ✅ Drag-and-drop | ✅ Per-table form view config | ⚠️ Admin app forms (not a public form designer) |
-| Embed on external website | ✅ iframe / link | ✅ Shared form link | ⚠️ Build your own via API |
-| Conditional logic / field rules | ✅ | ✅ Show/hide fields | ✅ Via Flows + field validation |
-| File uploads | ✅ | ✅ (attachment fields) | ✅ (file fields) |
-| Email notifications on submit | ✅ | ✅ | ✅ (via Flows) |
-| Webhooks | ✅ | ✅ (webhook automations) | ✅ (Flows webhook operation) |
-| Slack / Discord integration | ✅ Native | Via webhook | Via Flows |
-| Submissions stored in | OpnForm's own DB | Your SQL database table | Your SQL database collection |
-| Submissions sit alongside other business data | ❌ Separate | ✅ Same workspace | ✅ Same workspace |
-| API access to submissions | ✅ | ✅ (auto REST API) | ✅ (REST + GraphQL) |
-| Built-in automation on submit | ⚠️ Webhook out | ✅ (automations) | ✅ (Flows — powerful) |
-| User roles / access control on responses | Basic (workspace) | ✅ Per-table | ✅ Granular, per-collection |
-| Public / anonymous submission | ✅ | ✅ | ⚠️ Requires public API config |
-| Captcha | ✅ | ❌ (as of writing) | ⚠️ Add via custom form |
-| GitHub stars | ~3,800 | ~65,600 | ~30,000 |
-| License | AGPL v3 | AGPL v3 | BSL → Apache (source-available) |
-| Self-host cost | ~$5/mo VPS | ~$5/mo VPS | ~$5/mo VPS |
+| Feature | OpnForm | NocoDB Forms | Directus Forms |
+|---------|---------|-------------|----------------|
+| Drag-and-drop builder | Yes | Yes (form view) | Yes (layout builder) |
+| Unlimited submissions | Yes | Yes | Yes |
+| Conditional logic | Yes | Limited | Yes (via flows) |
+| File uploads | Yes | Yes (attachment field) | Yes (file field) |
+| Email notifications | Yes | Yes (webhook + automation) | Yes (flow + email) |
+| Webhooks | Yes | Yes | Yes |
+| Stripe payments | Yes | No | Yes (via flow) |
+| Form analytics | Yes | No | No (use Plausible) |
+| Custom branding | Paid tier | Yes | Yes |
+| Embed anywhere | Yes | Yes (iframe) | Yes (iframe/API) |
+| Public API | Yes | Yes (REST + GraphQL) | Yes (REST + GraphQL) |
+| Multi-page forms | Yes | No | Yes |
+| AI form generation | Yes (MCP server) | No | No |
+| Database backend | MySQL/PostgreSQL | MySQL/PostgreSQL/SQLite | Any SQL database |
+| Docker deployment | Yes | Yes | Yes |
 
----
+## OpnForm: The Dedicated Form Builder
 
-## When To Pick OpnForm
+OpnForm is the most straightforward of the three. You install it, you build forms, you collect submissions. There's no database to design, no collections to configure, no API endpoints to wire up before you can start collecting data.
 
-OpnForm is the right choice when **forms are the job, and you don't need the submissions tied into a larger database right now.**
+### What It Does Well
 
-Use OpnForm if:
+The form builder itself is polished. You get a visual editor with drag-and-drop fields, conditional logic, custom themes, and multi-page layouts. It supports both classic and conversational (Typeform-style) form designs. Submissions land in a dashboard where you can view, export, and route them.
 
-- You want a direct Typeform replacement — embeddable forms on a public website, shared links, conditional logic, file uploads, the works.
-- Your main need is collecting contact form submissions, event registrations, job applications, or simple surveys, and getting notified (email/Slack/Discord) when they arrive.
-- You don't want to think about database tables, relationships, or APIs. You want to build a form in 10 minutes and move on.
-- You might pipe submissions into another tool later via webhook — but for now, "notify me when someone submits" is enough.
+OpnForm also has a few features the others lack:
 
-OpnForm is the simplest of the three to set up for a pure forms use case. If you've ever used Typeform, the interface will feel familiar. The trade-off is that submissions live in OpnForm's own database, separate from the rest of your business data. You can export them or send them out via webhook, but there's no built-in "this form writes directly into my CRM table" story unless you wire that up yourself.
+- **Built-in form analytics** so you can see completion rates and drop-off points without wiring up a separate analytics tool
+- **Stripe payment integration** directly in the form, so you can charge for event registrations, deposits, or paid submissions
+- **An MCP server** that lets AI agents create and manage forms programmatically, which is useful if you're building automated workflows that generate forms dynamically
 
-**Real example:** A small law firm wants a client intake form on their website — name, case type, brief description, document upload. They need email notification and a weekly digest of new submissions. OpnForm handles this in an afternoon, no database knowledge required.
+### Where It Falls Short
 
----
+OpnForm is a form builder, not a database. Submissions are stored in its own database, and you access them through OpnForm's dashboard or API. If you want submissions to flow into a CRM, a project tracker, or a custom database, you'll need to set up webhooks or use n8n to route the data.
 
-## When To Pick NocoDB Forms
+Custom branding (removing the OpnForm logo from forms) requires a paid plan even when self-hosting. The free self-hosted tier includes OpnForm branding.
 
-NocoDB Forms is the right choice when **your form submissions are part of a larger dataset you're already managing in NocoDB.**
+### Self-Hosting OpnForm
 
-Use NocoDB Forms if:
+```yaml
+# docker-compose.yml (simplified)
+version: "3.8"
+services:
+  opnform:
+    image: jhumanj/opnform-api:latest
+    ports:
+      - "8080:80"
+    environment:
+      - APP_URL=https://forms.yourdomain.com
+      - DB_HOST=db
+      - DB_DATABASE=opnform
+      - DB_USERNAME=opnform
+      - DB_PASSWORD=your-password
+    depends_on:
+      - db
+  db:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_DB=opnform
+      - POSTGRES_USER=opnform
+      - POSTGRES_PASSWORD=your-password
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
+```
 
-- You're already using (or planning to use) NocoDB as your team's no-code database — for tracking projects, customers, inventory, or anything else.
-- You want form submissions to appear as rows in a table that sits next to your other tables, with relationships between them. A "New Lead" form creates a row in the Leads table, which links to the Companies table and the Campaigns table.
-- You want non-technical staff to view, filter, and manage submissions in the same spreadsheet-like interface they use for everything else — not in a separate forms dashboard.
-- You need built-in automations: when a form is submitted, update a related record, send a notification, or trigger a downstream process.
+OpnForm requires PHP, PostgreSQL or MySQL, and Redis for queues. The Docker setup is straightforward but heavier than a single-container deployment.
 
-NocoDB's form view is less polished than OpnForm's dedicated designer — there are fewer layout customization options, and the form is generated from your table's fields rather than designed from a blank canvas. But that's the point: the form is a window into your database, not a standalone artifact. The submission doesn't need to be exported or synced — it's already where it belongs.
+## NocoDB Forms: The Database-First Approach
 
-**Real example:** A property management company tracks tenants, units, and maintenance requests in NocoDB. They create a form view on the Maintenance Requests table and share the link with tenants. When a tenant submits "kitchen sink leaking," a row appears in the table, a webhook fires to n8n, and a work order is created and assigned. No data sync, no export step — it's one system.
+NocoDB flips the form builder concept. Instead of starting with a form, you start with a database table. You define columns (text, number, date, select, attachment), set up views (grid, Kanban, calendar, form), and then share the form view publicly.
 
----
+### What It Does Well
 
-## When To Pick Directus
+The strength of this approach is that your form submissions land directly in a structured database that you control. No webhooks needed, no data routing. The form is a view of the table, and the table is where the data lives.
 
-Directus is the right choice when **forms are just the front door to a larger application or automation pipeline**, and you're comfortable (or working with someone comfortable) doing a little configuration.
+NocoDB also gives you:
 
-Use Directus if:
+- **Multiple view types** for the same data. A customer feedback table can have a form view for public submissions, a grid view for internal review, and a Kanban view for tracking status.
+- **REST and GraphQL APIs** automatically generated for every table, so other tools can read and write to the same data.
+- **A spreadsheet-like interface** that non-technical team members can use to manage submissions without learning a database tool.
 
-- You're building a custom internal tool or customer portal on top of Directus — forms are one input method among several (admin app, API, n8n workflow, mobile app).
-- You need granular access control: different teams see and edit different subsets of submissions; public users can submit but not view; managers can approve.
-- You want powerful automation triggered by submissions — Directus Flows can run multi-step logic (validate, enrich with AI, create related records, send conditional notifications, call external APIs) the moment a form is submitted.
-- You want your form data accessible via a clean REST or GraphQL API from day one, for integration with other systems.
-- You're okay building the public-facing form yourself (on your website, or via a simple HTML form posting to a Directus endpoint) rather than using a visual designer — or using Directus's admin app for internal forms where a polished public page isn't needed.
+### Where It Falls Short
 
-Directus doesn't give you a Typeform-style embed. What it gives you is a **database-backed, API-first, automation-ready foundation** that forms plug into. For internal forms — equipment requests, PTO requests, internal change orders — the admin app's generated forms are perfectly good and require zero design work. For external public forms, you (or a developer) build the form and point it at a Directus endpoint; Flows handle the rest.
+NocoDB's form views are basic compared to a dedicated form builder. There's no multi-page form support, limited conditional logic (showing/hiding fields based on previous answers), and no built-in form analytics. The form design options are minimal compared to OpnForm's themed, branded layouts.
 
-**Real example:** A distribution company runs its entire product catalog, orders, and customer database on Directus. A wholesale ordering form on their website posts to a public Directus endpoint. A Flow validates the order, checks inventory, applies the customer's pricing tier, creates the order record, and notifies the fulfillment team — all automatically. The "form" is a small piece of a much larger system.
+If you need payment collection through the form, NocoDB doesn't have native Stripe integration. You'd need to build that with webhooks and n8n or a custom script.
 
----
+### Self-Hosting NocoDB
 
-## A Quick Decision Guide
+```bash
+# Simplest possible setup: Docker with SQLite
+docker run -d \
+  --name noco \
+  -v "$(pwd)/nocodb:/usr/app/data/" \
+  -p 8080:8080 \
+  nocodb/nocodb:latest
+```
 
-Still unsure? Run through this:
+NocoDB is the easiest to deploy of the three. A single Docker container with SQLite gets you a working instance in under a minute. For production, use PostgreSQL as the metadata database.
 
-1. **"I just need forms on my website, fast, with notifications."** → OpnForm. It's the most direct path.
-2. **"I want form submissions to be rows in my team's database, alongside my other data."** → NocoDB Forms.
-3. **"Forms are one input into a larger app or automated workflow with complex logic and access control."** → Directus.
+## Directus Forms: The Backend Powerhouse
 
-None of these is the wrong choice. The wrong choice is paying Typeform $99/month to hold your data hostage because you didn't know there were three solid open source alternatives — each tuned to a different situation.
+Directus is the most flexible and the most complex. It's a headless CMS that wraps any SQL database with an admin panel, APIs, and automation flows. Forms in Directus are built by creating a collection (table), defining fields, and then either using the admin panel as an internal form, embedding a public form via the API, or building a custom form frontend that posts to the Directus API.
 
----
+### What It Does Well
 
-## Can You Use More Than One?
+Directus gives you the most control:
 
-Yes, and many businesses do. A common stack:
+- **Connect to an existing database.** If you already have a PostgreSQL or MySQL database, Directus wraps it without migrating your data. Your form submissions can land in the same database as your CRM, inventory, or any other system.
+- **Flow automations** that trigger on form submission. A new submission can send an email, post to a Slack channel, create a task in another collection, or call an external API. No need for n8n if your automation is simple.
+- **Role-based access control** that's granular enough for enterprise use. You can control who sees which submissions, which fields they can edit, and which API endpoints they can access.
+- **REST and GraphQL APIs** with authentication, so you can build custom form frontends in any framework and post submissions to Directus.
 
-- **OpnForm** for public-facing marketing forms (contact, lead capture, event RSVP) where speed and polish matter.
-- **NocoDB** for team data management where form views let external people (clients, tenants, vendors) submit into a shared database.
-- **Directus** for the core business application where forms are just one of several input methods and automation is the real value.
+### Where It Falls Short
 
-All three are self-hosted, so there's no per-submission cost regardless of how many forms you run or how many responses you collect. The only cost is the VPS they live on — typically a single $5–$20/month server handles all of them comfortably for a small business.
+Directus does not have a built-in public form builder with a drag-and-drop interface. The admin panel works for internal forms, but if you want a public-facing form, you need to either embed it via an iframe (limited) or build a custom frontend that posts to the API (requires development work).
 
----
+The learning curve is steeper. Directus assumes you understand databases, collections, relationships, and flows. For a business that just wants to put up a contact form, it's overkill.
 
-## Tool Stack Summary
+### Self-Hosting Directus
 
-| Tool | Role | License | Best For |
-|------|------|---------|----------|
-| [OpnForm](https://opnform.com) | Dedicated form builder | AGPL v3 | Public forms, fast deployment, Typeform replacement |
-| [NocoDB](https://nocodb.com) | No-code database with form views | AGPL v3 | Submissions as rows in a shared business database |
-| [Directus](https://directus.io) | Data platform + APIs + Flows | BSL → Apache | Forms as input to larger apps and automation pipelines |
-| [n8n](https://n8n.io) | Workflow automation (connects to all three) | Sustainable Use | Routing submissions, notifications, downstream logic |
-| [Ollama](https://ollama.ai) | Local AI model runner | MIT | Enriching submissions (summarize, classify, extract) |
+```yaml
+# docker-compose.yml (simplified)
+version: "3.8"
+services:
+  directus:
+    image: directus/directus:latest
+    ports:
+      - "8055:8055"
+    environment:
+      - KEY=your-random-key
+      - SECRET=your-random-secret
+      - ADMIN_EMAIL=admin@yourdomain.com
+      - ADMIN_PASSWORD=your-admin-password
+      - DB_CLIENT=pg
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=directus
+      - DB_USER=directus
+      - DB_PASSWORD=your-password
+    depends_on:
+      - db
+  db:
+    image: postgis/postgis:16-3.4
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=directus
+      - POSTGRES_USER=directus
+      - POSTGRES_PASSWORD=your-password
+volumes:
+  pgdata:
+```
 
-All self-hostable. No per-seat fees. No per-submission fees. Your data stays on your infrastructure.
+## Which One Should You Pick?
 
----
+The answer depends on what you're trying to do.
 
-## Ready to Stop Paying Per Form Submission?
+**Choose OpnForm if** you need a dedicated form builder with polished public-facing forms, payment collection, and form analytics. It's the best direct replacement for Typeform or Jotform. If forms are your primary data collection method and you want them to look professional without custom development, this is the right choice.
 
-If you're tired of form SaaS pricing and want to move your forms — and the data they collect — onto infrastructure you control, we can help. We'll assess which of these three tools fits your business, set it up, connect it to your existing systems, and train your team to manage it.
+**Choose NocoDB Forms if** you want form submissions to flow directly into a database you manage, and you want to view that data in spreadsheets, Kanban boards, and calendars. It's ideal if you're already using NocoDB as your Airtable replacement and just need to add public data collection to your existing tables.
 
-[Get in touch](/#contact) and tell us what forms you're currently running and what they cost you. We'll show you the self-hosted alternative.
+**Choose Directus if** you need form submissions to integrate deeply with an existing database, you want built-in automation (flows) triggered by submissions, and you have someone on your team who can build a custom form frontend. It's the most powerful option but requires the most setup.
+
+## A Practical Combined Approach
+
+These tools aren't mutually exclusive. A common pattern in self-hosted stacks is:
+
+1. **OpnForm** for public-facing forms (contact, registration, feedback) where design and UX matter
+2. **Webhook from OpnForm to n8n** that routes the submission
+3. **NocoDB or Directus** as the database where submissions land and get managed by the team
+
+This gives you the best of both worlds: beautiful forms for respondents, structured data storage for your team, and automation in between.
+
+## Docker Compose for the Combined Stack
+
+```yaml
+version: "3.8"
+services:
+  opnform:
+    image: jhumanj/opnform-api:latest
+    ports:
+      - "8080:80"
+    environment:
+      - APP_URL=https://forms.yourdomain.com
+      - DB_HOST=opnform-db
+      - DB_DATABASE=opnform
+      - DB_USERNAME=opnform
+      - DB_PASSWORD=secure-password
+    depends_on:
+      - opnform-db
+
+  opnform-db:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_DB=opnform
+      - POSTGRES_USER=opnform
+      - POSTGRES_PASSWORD=secure-password
+    volumes:
+      - opnform-pgdata:/var/lib/postgresql/data
+
+  nocodb:
+    image: nocodb/nocodb:latest
+    ports:
+      - "8081:8080"
+    volumes:
+      - nocodb-data:/usr/app/data
+
+  n8n:
+    image: n8nio/n8n:latest
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=n8n.yourdomain.com
+      - WEBHOOK_URL=https://n8n.yourdomain.com
+    volumes:
+      - n8n-data:/home/node/.n8n
+
+volumes:
+  opnform-pgdata:
+  nocodb-data:
+  n8n-data:
+```
+
+With this setup, an OpnForm submission triggers a webhook to n8n, which formats the data and writes it to a NocoDB table via its REST API. Your team reviews submissions in NocoDB's grid view, moves them through a Kanban pipeline, and exports reports when needed.
+
+## Cost Comparison
+
+All three tools can be self-hosted for free. The real cost is infrastructure:
+
+| Component | Minimum Cost | Notes |
+|-----------|-------------|-------|
+| VPS (2GB RAM) | ~$6-12/month | Enough for OpnForm + NocoDB |
+| VPS (4GB RAM) | ~$12-24/month | Add Directus + n8n |
+| Domain + SSL | ~$10/year | Use Caddy for free SSL |
+| Maintenance time | 1-2 hours/month | Updates, backups, monitoring |
+
+Compare that to Typeform ($25-83/month), Airtable ($20-45/seat/month), and a separate automation tool ($20-50/month). The self-hosted stack pays for itself within the first month, and there are no per-response charges.
+
+## Wrapping Up
+
+The "best" form builder depends on your starting point. If you're replacing Typeform and want beautiful forms fast, OpnForm is the clear choice. If you're already running NocoDB as a database and just need to collect data into it, use NocoDB's form views. If you have an existing SQL database and want to build a comprehensive backend with forms, automations, and APIs, Directus is the most capable option.
+
+All three are self-hostable, all three eliminate per-response pricing, and all three give you ownership of your data. The question isn't which is "best" in the abstract, but which fits your stack and your team's skills.
+
+If you want help setting up any of these tools or designing a form-to-database workflow for your business, [reach out through our contact form](https://www.ardotconsulting.com/#contact). We specialize in open source automation for small businesses, and we can have you collecting data on your own infrastructure within a week.
