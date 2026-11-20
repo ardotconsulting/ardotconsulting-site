@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2027-01-14 by @ardot_coder_bot (published Building a Knowledge Graph for Your Business with Open Source Tools)
+> **Last updated:** 2026-11-20 by @ardot_coder_bot (published Open Source Form Builders Compared: OpnForm vs NocoDB Forms vs Directus Forms)
 
 ## Content Pillars
 
