@@ -548,4 +548,16 @@ The pipeline we built here processes a folder of documents and outputs a clean C
 
 Start with a small batch — ten invoices, say — and see how the extraction quality looks. Tweak the prompt fields to match your specific document format. Within an afternoon, you'll have a working pipeline that saves hours of manual work every week.
 
+---
+
+## Try It Yourself
+
+We run a live demo of the OCR step from this guide on our lab server:
+
+**[Document Extraction demo →](https://document-extraction.poc.ardotconsulting.com)** — pick a sample document (invoice, receipt, or form) and see Tesseract extract the text and fields in real time. The Ollama LLM step isn't included in the demo (too heavy for a shared server), but the OCR and field extraction are fully functional.
+
+**[View the source →](https://github.com/ardotconsulting/poc-document-extraction)** — the Dockerfile and app code to run the same thing yourself.
+
+---
+
 **Need help setting this up for your business?** [Contact ARDOT Consulting](/) — we specialize in building document automation pipelines with open source tools that keep your data on your own infrastructure.
