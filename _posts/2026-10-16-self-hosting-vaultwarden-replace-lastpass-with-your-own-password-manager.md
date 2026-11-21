@@ -272,6 +272,15 @@ Your password manager is too important to outsource to a company that's already 
 
 Start with a $5 VPS, a domain name, and the Docker Compose file above. Migrate your team in a week. Then cancel your LastPass subscription and put the savings somewhere useful.
 
+
+## Try It Live
+
+We're running a live Vaultwarden instance on our lab infrastructure:
+
+- **Try the demo:** [vaultwarden.poc.ardotconsulting.com](https://vaultwarden.poc.ardotconsulting.com) — a working Vaultwarden server, compatible with the official Bitwarden apps. Sign-up is locked; this shows the web vault interface your team would see.
+- **Source code:** [github.com/ardotconsulting/poc-vaultwarden](https://github.com/ardotconsulting/poc-vaultwarden) — Dockerfile and config
+
+The demo runs on a single container with SQLite. In production you'd add persistent storage and a reverse proxy for HTTPS — the setup is covered in the guide above.
 ---
 
 *Need help setting up a self-hosted password manager for your team? ARDOT Consulting specializes in open source security and automation infrastructure. [Reach out through our contact form](https://www.ardotconsulting.com/#contact) and we'll get Vaultwarden deployed, hardened, and connected to your team's workflow.*
