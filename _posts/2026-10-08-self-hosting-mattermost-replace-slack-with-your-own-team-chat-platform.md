@@ -370,6 +370,12 @@ A few things catch people off guard when setting up Mattermost for the first tim
 
 **Upgrades occasionally require database migration.** Major version upgrades may run database migrations that can take several minutes. Schedule upgrades during off-hours and always back up first.
 
+
+We're running a live demo of Mattermost on our lab infrastructure:
+
+- **Try the demo:** [mattermost.poc.ardotconsulting.com](https://mattermost.poc.ardotconsulting.com) — a working Mattermost instance you can log into and explore
+- **Source code:** [github.com/ardotconsulting/poc-mattermost](https://github.com/ardotconsulting/poc-mattermost) — Dockerfile and setup script
+
 ## Next Steps
 
 Mattermost is just one piece of a self-hosted communication stack. Once your team chat is running, consider:
