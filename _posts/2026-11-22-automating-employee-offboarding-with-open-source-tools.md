@@ -252,6 +252,10 @@ Employee offboarding is one of those processes that's invisible when it works an
 
 The tools are free. The setup takes a few weekends. The peace of mind — knowing that when someone leaves, access is revoked automatically and nothing falls through the cracks — is worth it.
 
+
+**[Try the interactive offboarding checklist →](https://offboarding-checklist.poc.ardotconsulting.com)**
+([View source](https://github.com/ardotconsulting/poc-offboarding-checklist))
+
 ---
 
 *Want help setting up an automated offboarding workflow for your business? ARDOT Consulting specializes in open source automation for small and mid-size companies. [Get in touch](https://www.ardotconsulting.com/#contact) and we'll help you build a secure, self-hosted offboarding process tailored to your stack.*
