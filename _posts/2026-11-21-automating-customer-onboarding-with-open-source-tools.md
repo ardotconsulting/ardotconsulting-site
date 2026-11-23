@@ -188,6 +188,8 @@ The tools to automate it are free, open source, and likely already running on yo
 
 Start small. Automate the welcome email this week. Add the folder setup next week. Before you know it, your onboarding process runs itself, and your team is spending their time on the work that actually needs a human — building relationships, solving problems, and making customers successful.
 
+**Want to see what an onboarding pipeline looks like in practice?** [Try the interactive onboarding pipeline tracker](https://customer-onboarding.poc.ardotconsulting.com) — walk through each stage, check off tasks, and see what's automated vs. human-in-the-loop. ([Source code](https://github.com/ardotconsulting/poc-customer-onboarding))
+
 ---
 
 *Want help setting up an automated onboarding pipeline for your business? ARDOT Consulting builds custom automation workflows with open source tools — no SaaS subscriptions, no vendor lock-in, no data leaving your control. [Get in touch](/#contact) and let's map out your onboarding process.*
