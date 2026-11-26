@@ -154,7 +154,7 @@ services:
       - data:/var/www/app/data
       - plugins:/var/www/app/plugins
     environment:
-      DATABASE_URL: postgres://kanboard:kanboard-secret@db/kanboard
+      DATABASE_URL: postgres://kanboard:***@db/kanboard
     depends_on:
       db:
         condition: service_healthy
@@ -311,6 +311,10 @@ Kanboard isn't trying to compete with Trello on features. It's trying to do the 
 The worst case is that you spend an hour setting it up, realize your team needs native mobile apps or AI features, and go back to Trello. The best case is that you stop paying $100+ per month for a tool whose core functionality — moving cards across columns — Kanboard provides for free.
 
 Start with one board, invite a few team members, and see if the simplicity works for your workflow. If it does, you've just removed another SaaS subscription from your monthly bill.
+
+
+**[Try the live Kanboard demo →](https://kanboard.poc.ardotconsulting.com)**
+([View source](https://github.com/ardotconsulting/poc-kanboard))
 
 ---
 
