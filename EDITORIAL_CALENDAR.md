@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2027-01-18 by @ardot_coder_bot (published Automating Quality Assurance: Open Source Testing for Your Business Processes)
+> **Last updated:** 2027-01-22 by @ardot_coder_bot (published Self-Hosting Gitea: Your Own Git Hosting for Private Code and Documents)
 
 ## Content Pillars
 
@@ -127,9 +127,9 @@
 | 2027-01-16 | AI Automation for Dental Practices: Appointments, Reminders, and Patient Records | — |
 | 2027-01-18 | Self-Hosting Flame Dashboard: Centralize Access to All Your Self-Hosted Tools | — |
 | 2027-01-20 | From Zero to Automated: A Beginner's Guide to n8n Workflow Design Patterns | — |
-| 2027-01-22 | Open Source Form Builders Compared: OpnForm vs NocoDB Forms vs Directus Forms | — |
+| 2027-01-22 | Open Source Form Builders Compared: OpnForm vs NocoDB Forms vs Directus Forms | — | published 2026-11-20 |
 | 2027-01-24 | Automating Quality Assurance: Open Source Testing for Your Business Processes | — | published 2027-01-18 |
-| 2027-01-26 | Self-Hosting Gitea: Your Own Git Hosting for Private Code and Documents | — |
+| 2027-01-26 | Self-Hosting Gitea: Your Own Git Hosting for Private Code and Documents | — | published 2027-01-22 |
 | 2027-01-28 | AI Automation for Veterinary Clinics: Patient Records, Reminders, and Inventory | — |
 | 2027-01-30 | The Self-Hosted Security Checklist: 12 Steps to Lock Down Your Stack | — |
 | 2027-02-01 | Building a Customer Feedback Loop with Open Source Tools | — |
