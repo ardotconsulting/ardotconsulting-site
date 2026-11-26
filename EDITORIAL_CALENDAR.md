@@ -1,7 +1,7 @@
 # ARDOT Consulting — Editorial Calendar
 
 > **Purpose:** Guide blog post creation to sustain a 1-post-every-2-days cadence.
-> **Last updated:** 2027-01-22 by @ardot_coder_bot (published Self-Hosting Gitea: Your Own Git Hosting for Private Code and Documents)
+> **Last updated:** 2026-11-26 by @ardot-automator (published Self-Hosting Kanboard: Replace Trello With Your Own Kanban Board)
 
 ## Content Pillars
 
@@ -97,7 +97,10 @@
 | 2026-11-17 | Backing Up Your Self-Hosted Stack: A Practical Disaster Recovery Guide | @ardot_automator |
 | 2026-11-19 | Building an Automated Sales Pipeline with Open Source Tools | @ardot_automator |
 | 2026-11-21 | Automating Customer Onboarding with Open Source Tools | cron |
-| 2026-11-23 | Self-Hosting Mautic: Replace HubSpot with Your Own Marketing Automation Platform | @ardot_automator |
+| 2026-11-22 | Automating Employee Offboarding with Open Source Tools | @ardot-automator |
+| 2026-11-23 | Self-Hosting Mautic: Replace HubSpot with Your Own Marketing Automation Platform | @ardot-automator |
+| 2026-11-24 | Automating Holiday Sales: Open Source Tools for Black Friday and Beyond | @ardot-automator |
+| 2026-11-26 | Self-Hosting Kanboard: Replace Trello With Your Own Kanban Board | @ardot-automator |
 | 2026-11-27 | Self-Hosting Kimai: Replace Toggl and Harvest with Your Own Time Tracking Platform | @ardot_automator |
 | 2026-12-01 | Self-Hosting Appsmith: Build Internal Business Apps Without Retool Subscriptions | @ardot_automator |
 | 2026-12-03 | AI Automation for Restaurants: Reservations, Inventory, and Staff Scheduling | cron |
@@ -122,14 +125,15 @@
 | 2026-11-10 | Self-Hosting Caddy: The Reverse Proxy That Makes HTTPS Effortless | @ardot_automator |
 | 2027-01-08 | Self-Hosting Caddy: The Reverse Proxy That Makes HTTPS Effortless | — | published 2026-11-10 |
 | 2027-01-10 | Automating Inventory Replenishment: Never Run Out of Stock Again | — | published 2026-11-12 |
-| 2027-01-12 | Self-Hosting Penpot: Replace Figma With Your Own Design Platform | — |
-| 2027-01-14 | Building a Knowledge Graph for Your Business with Open Source Tools | — | published 2027-01-14 |
+| 2027-01-12 | Self-Hosting Penpot: Replace Figma With Your Own Design Platform | — | published 2026-11-14 (commit local, token expired) |
+| 2027-01-14 | Building a Knowledge Graph for Your Business with Open Source Tools | — |
 | 2027-01-16 | AI Automation for Dental Practices: Appointments, Reminders, and Patient Records | — |
-| 2027-01-18 | Self-Hosting Flame Dashboard: Centralize Access to All Your Self-Hosted Tools | — |
-| 2027-01-20 | From Zero to Automated: A Beginner's Guide to n8n Workflow Design Patterns | — |
-| 2027-01-22 | Open Source Form Builders Compared: OpnForm vs NocoDB Forms vs Directus Forms | — | published 2026-11-20 |
-| 2027-01-24 | Automating Quality Assurance: Open Source Testing for Your Business Processes | — | published 2027-01-18 |
-| 2027-01-26 | Self-Hosting Gitea: Your Own Git Hosting for Private Code and Documents | — | published 2027-01-22 |
+| 2027-01-18 | Self-Hosting Flame Dashboard: Centralize Access to All Your Self-Hosted Tools | — | published 2026-11-16 |
+| 2026-11-18 | From Zero to Automated: A Beginner's Guide to n8n Workflow Design Patterns | — | published 2026-11-18 |
+| 2026-11-20 | Open Source Form Builders Compared: OpnForm vs NocoDB Forms vs Directus Forms | — | published 2026-11-20 |
+| 2027-01-22 | Open Source Form Builders Compared: OpnForm vs NocoDB Forms vs Directus Forms | — |
+| 2027-01-24 | Automating Quality Assurance: Open Source Testing for Your Business Processes | — |
+| 2027-01-26 | Self-Hosting Gitea: Your Own Git Hosting for Private Code and Documents | — |
 | 2027-01-28 | AI Automation for Veterinary Clinics: Patient Records, Reminders, and Inventory | — |
 | 2027-01-30 | The Self-Hosted Security Checklist: 12 Steps to Lock Down Your Stack | — |
 | 2027-02-01 | Building a Customer Feedback Loop with Open Source Tools | — |
