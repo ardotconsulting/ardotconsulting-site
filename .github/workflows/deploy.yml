@@ -3,6 +3,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Daily, just after midnight Pacific (_config.yml's timezone): with
+  # future: false, a post dated ahead only appears when the site is rebuilt on
+  # or after its date, so this publishes scheduled posts on their day.
+  schedule:
+    - cron: "15 8 * * *"
   workflow_dispatch:
 
 permissions: {}
