@@ -154,7 +154,7 @@ services:
       - data:/var/www/app/data
       - plugins:/var/www/app/plugins
     environment:
-      DATABASE_URL: postgres://kanboard:***@db/kanboard
+      DATABASE_URL: postgres://kanboard:kanboard-secret@db/kanboard
     depends_on:
       db:
         condition: service_healthy
