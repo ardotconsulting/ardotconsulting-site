@@ -312,6 +312,10 @@ The worst case is that you spend an hour setting it up, realize your team needs 
 
 Start with one board, invite a few team members, and see if the simplicity works for your workflow. If it does, you've just removed another SaaS subscription from your monthly bill.
 
+
+**[Try the live Kanboard demo →](https://kanboard.poc.ardotconsulting.com)**
+([View source](https://github.com/ardotconsulting/poc-kanboard))
+
 ---
 
 *Want help setting up Kanboard or migrating from Trello? [Get in touch](https://www.ardotconsulting.com/#contact) — we help small businesses replace SaaS subscriptions with self-hosted open source alternatives.*
