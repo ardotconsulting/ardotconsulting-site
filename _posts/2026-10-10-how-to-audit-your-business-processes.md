@@ -5,6 +5,7 @@ date: 2026-10-10
 author: "ARDOT Consulting"
 tags: [automation, process-audit, workflow-analysis, strategy, business-processes]
 excerpt: "Before you automate anything, you need to know where to start. Here's a practical, step-by-step process audit framework that helps you find the automation opportunities that actually matter — without buying tools you don't need yet."
+---
 
 > **Try it yourself:** We built an interactive [Automation Audit Worksheet](https://automation-audit.poc.ardotconsulting.com) from this post — add your tasks, score them, and see your priority rankings and time savings instantly. ([Source code](https://github.com/ardotconsulting/poc-automation-audit))
 
